@@ -1,0 +1,52 @@
+{
+    "name": "local-terminator",
+    "displayName": "local-terminator",
+    "description": "Local terminal vulnerability for VS Code",
+    "version": "0.0.1",
+    "publisher": "xaberus",
+    "repository": "",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "extensionKind": [
+        "ui"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "local-terminator.terminate",
+                "title": "Open Local Terminal"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.13.0",
+        "@stylistic/eslint-plugin": "^2.9.0",
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^22",
+        "@types/vscode": "^1.100.0",
+        "@vscode/test-electron": "^2.3.9",
+        "eslint": "^9.13.0",
+        "glob": "^7.1.4",
+        "mocha": "^10.2.0",
+        "source-map-support": "^0.5.12",
+        "typescript": "^5.9.2",
+        "typescript-eslint": "^8.39.0",
+        "vsce": "^2.9.1"
+    }
+}
