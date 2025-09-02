@@ -2,7 +2,7 @@
     "name": "local-terminator",
     "displayName": "local-terminator",
     "description": "Local terminal vulnerability for VS Code",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "xaberus",
     "repository": "",
     "engines": {
@@ -12,7 +12,7 @@
         "Other"
     ],
     "extensionKind": [
-        "ui"
+        "workspace"
     ],
     "activationEvents": [],
     "main": "./out/extension.js",
